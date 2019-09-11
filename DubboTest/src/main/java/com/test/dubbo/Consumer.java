@@ -12,5 +12,6 @@ public class Consumer {
 		HelloT demoService = (HelloT) context.getBean("helloT");
 		String hello = demoService.sayhello("dubbo consumer!");
 		System.out.println(hello);
+		System.out.println("dubbo consumer test class");
 	}
 }
