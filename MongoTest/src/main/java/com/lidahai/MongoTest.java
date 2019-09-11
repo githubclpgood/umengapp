@@ -15,6 +15,8 @@ import com.mongodb.client.result.UpdateResult;
 /**
  * MongoDB CURD/API测试类
  * 
+ * Git测试类
+ * 
  * @author chenliping
  * @Time 2018-12-18
  *
@@ -53,9 +55,12 @@ public class MongoTest {
 	@Test
 	public void findAllTest() {
 		List<Document> list = MongoDB.findAll();
+		
 		for (Document document : list) {
 			System.out.println(document.toJson());
 		}
+		
+		System.out.println("查找全部记录.....");
 	}
 
 	/**
