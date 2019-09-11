@@ -9,5 +9,6 @@ public class Provide {
 		context = new ClassPathXmlApplicationContext(new String[] { "application-context-provide.xml" });
 		context.start();
 		System.in.read();
+		System.out.println("dubbo test");
 	}
 }
